@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { ChefHat } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useRecipes } from './hooks/useRecipes';
@@ -76,9 +76,9 @@ function AppContent() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <AppContent />
-    </BrowserRouter>
+    </Router>
   );
 }
 
